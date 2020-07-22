@@ -65,7 +65,7 @@
             var academy = document.getElementById('academy').value.toLowerCase();
 
             if (password === expectedPassword) {
-                loadAssets(academy)
+                window.location.replace(secretsPerAcademy[academy])
             }
         }
 
