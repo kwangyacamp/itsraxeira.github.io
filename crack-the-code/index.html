@@ -23,7 +23,7 @@
             initApp();
         };
 
-        const expectedPassword = "nordenium"
+        const expectedPassword = "telorceplokkambing"
 
         var secretsByClanName = {
             "01xs922ufw": [
@@ -49,7 +49,7 @@
             }
         }
 
-        var secretsPerAcademy = {
+        var secretsPerProdigy = {
             "nordenium": "https://hosting.photobucket.com/images/i/Nordenium/bbv.png?width=1920&height=1080&fit=bounds",
             "sydenium": "https://hosting.photobucket.com/images/i/Nordenium/gkf.png?width=1920&height=1080&fit=bounds",
             "ostenium": "https://hosting.photobucket.com/images/i/Nordenium/3.png?width=1920&height=1080&fit=bounds",
@@ -62,26 +62,26 @@
         function login() {
             var name = document.getElementById('name').value;
             var password = document.getElementById('password').value;
-            var academy = document.getElementById('academy').value.toLowerCase();
+            var prodigy = document.getElementById('prodigy').value.toLowerCase();
 
             if (password === expectedPassword) {
-                window.location.replace(secretsPerAcademy[academy]);
+                window.location.replace(secretsPerProdigy[prodigy]);
             } else {
                 document.getElementById('name').value = "";
                 document.getElementById('password').value = "";
-                document.getElementById('academy').value = "";
+                document.getElementById('prodigy').value = "";
                 alert("Login Error");
             }
         }
 
-        function loadAssets(academy) {
+        function loadAssets(prodigy) {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("content").innerHTML = this.responseText;
                 }
             };
-            xhttp.open("GET", secretsPerAcademy[academy], true);
+            xhttp.open("GET", secretsPerProdigy[prodigy], true);
             xhttp.send();
         }
     </script>
@@ -132,9 +132,9 @@
         }
 
         .wrapper {
-            background: #50a3a2;
-            background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
-            background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+            background: #13264e;
+            background: -webkit-gradient(linear, left top, right bottom, from(#13264e), to(#dddddd));
+            background: linear-gradient(to bottom right, #13264e 0%, #dddddd 100%);
             position: absolute;
             left: 0;
             width: 100%;
@@ -197,7 +197,7 @@
         form input:focus {
             background-color: white;
             width: 300px;
-            color: #53e3a6;
+            color: #13264e;
         }
 
         .loginbutton {
@@ -208,7 +208,7 @@
             background-color: white;
             border: 0;
             padding: 10px 15px;
-            color: #53e3a6;
+            color: #13264e;
             border-radius: 3px;
             width: 250px;
             cursor: pointer;
@@ -283,10 +283,12 @@
 <body>
     <div id="wrapper" class="wrapper">
         <div class="container">
-            <h1>Welcome</h1>
+            <h1>WELCOME </br>
+                Please login to get your next clue!
+            </h1>
             <div id="error" class="error"></div>
             <form class="form" id="signup">
-                <input type="text" id="academy" placeholder="Academy" required>
+                <input type="text" id="prodigy" placeholder="Prodigy" required>
                 <input type="name" id="name" placeholder="Full Name" required>
                 <input type="password" id="password" placeholder="Password" required>
                 <button type="button" id="login-button" class="loginbutton">Login</button>
