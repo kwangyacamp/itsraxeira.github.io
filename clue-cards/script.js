@@ -11,10 +11,10 @@ const clueImage = document.querySelector("#clue");
 let isOpened = false;
 const PASSWORD = "telorceplokkambing";
 const SECRETS = {
-  "nordenium": "https://hosting.photobucket.com/images/i/Nordenium/tcif.png",
-  "sydenium": "https://hosting.photobucket.com/images/i/Nordenium/cbs.png",
-  "vestenium": "https://hosting.photobucket.com/images/i/Nordenium/hkc.png",
-  "ostenium": "https://hosting.photobucket.com/images/i/Nordenium/hvfss.png"
+  "nordenium": "images/tcif.png",
+  "sydenium": "images/cbs.png",
+  "vestenium": "images/hkc.png",
+  "ostenium": "images/hvfss.png"
 };
 
 const openModal = () => {
