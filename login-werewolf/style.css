@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#bg-video {
+#bg-video, #inner-frame {
   position: fixed;
   right: 0;
   bottom: 0;

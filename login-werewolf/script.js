@@ -8,6 +8,7 @@ const prodigy = document.querySelector("#prodigy");
 const password = document.querySelector("#password");
 const loginButton = document.querySelector("#login-button");
 const clueImage = document.querySelector("#clue");
+const iframe = document.querySelector("#inner-frame");
 let isOpened = false;
 const PASSWORD = "telorceplokkambing";
 const SECRETS = {
@@ -31,8 +32,7 @@ const login = () => {
   if (password.value === PASSWORD) {
     let url = SECRETS[prodigy.value.toLowerCase()];
     if (url) {
-      // loadImage(url);
-      loadURL("../wwplayerprof/index.html");
+      loadIframe("../wwplayerprof/index.html");
     } else {
       alert("Prodigy Name is invalid")
     }
@@ -42,6 +42,11 @@ const login = () => {
     prodigy.value = "";
     password.value = "";
   }
+}
+
+const loadIframe = (url) => {
+  iframe.src = "../wwplayerprof/index.html";
+  modal.style.display = "none";
 }
 
 const loadImage = (url) => {
