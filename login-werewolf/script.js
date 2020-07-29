@@ -10,7 +10,7 @@ const loginButton = document.querySelector("#login-button");
 const clueImage = document.querySelector("#clue");
 const iframe = document.querySelector("#inner-frame");
 let isOpened = false;
-const PASSWORD = "telorceplokkambing";
+const PASSWORD = "14052020";
 const SECRETS = {
   "nordenium": "images/tcif.png",
   "sydenium": "images/cbs.png",

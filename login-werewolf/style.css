@@ -63,7 +63,7 @@ body {
   font-size: 26px;
   margin: 0;
   font-weight: 400;
-  color: #55311c;
+  color: #13264e;
 }
 .modal-desc {
   margin: 6px 0 30px 0;
@@ -234,7 +234,7 @@ body {
   border-color: #13264e;
 }
 .input-block:focus-within .input-label {
-  color: rgba(140, 117, 105, 0.8);
+  color: rgba(30,30,46, 0.8);
 }
 
 .icon-button {
