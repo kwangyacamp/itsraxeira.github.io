@@ -32,8 +32,7 @@ const login = () => {
     let url = SECRETS[prodigy.value.toLowerCase()];
     if (url) {
       // loadImage(url);
-      ajaxLoadPage("../wwplayerprof");
-      
+      loadURL("../wwplayerprof/index.html");
     } else {
       alert("Prodigy Name is invalid")
     }
@@ -50,15 +49,8 @@ const loadImage = (url) => {
   clueImage.src = url;
 }
 
-const ajaxLoadPage = (url) => {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("content").innerHTML = this.responseText;
-      }
-  };
-  xhttp.open("GET", url, true);
-  xhttp.send();
+async function loadURL(url) {
+  body.innerHTML = await (await fetch(url)).text();
 }
 
 window.addEventListener("scroll", () => {
