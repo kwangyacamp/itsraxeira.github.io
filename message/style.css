@@ -19,7 +19,7 @@
 }
 
 .front{
-  background: #CCCCCC;
+  background: #d8d8d8;
   display: table;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .card .outerBlank {
-    background: #cccccc;
+    background: #d8d8d8;
 }
 
 
@@ -145,7 +145,7 @@
     right: 0;
     margin: 50px auto;
     padding: 20px;
-    background: rgba(54, 20, 0, 0.85);
+    background: rgba(19, 38, 78, 0.85);
     color: #FFFFFF;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -170,7 +170,7 @@
 }
 
 .btn-reply a {
-    background: rgba(54, 20, 0, 1);
+    background: rgba(19, 38, 78, 1);
     color: #FFFFFF;
     font-weight: bold;
     padding: 10px 30px;
