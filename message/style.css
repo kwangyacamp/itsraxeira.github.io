@@ -75,7 +75,7 @@
 .back .left {
 		position: absolute;
 		z-index: 10;
-    bottom: 10px;
+        bottom: 10px;
 		left: 0px;
 		border-left: 480px solid #333;
 		border-top: 200px solid transparent;
@@ -147,9 +147,9 @@
     padding: 20px;
     background: rgba(19, 38, 78, 0.85);
     color: #FFFFFF;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
 }
 
 .rewards {
