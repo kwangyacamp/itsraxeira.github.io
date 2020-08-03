@@ -16,7 +16,7 @@
 
 
       <div class="envFace front">
-        <h1>To: Receipient's Name</h1>
+        <h1 id="recipient">To: Receipient's Name</h1>
       </div>
 
 
@@ -39,7 +39,7 @@
           <div class="cardFace innerBG">
             <div class="greetings">
               <div class="content">
-                <h2>Dear Receipient</h2>
+                <h2 id="card-recipient">Dear Receipient</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                   and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
@@ -47,14 +47,15 @@
                   with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                   publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <p>Regards,<br />Sender</p>
-                <div class="btn-reply">
+
+                <!-- <div class="btn-reply">
                   <a href="">Reply</a>
-                </div>
+                </div> -->
 
                 <div class="rewards-container">
-                  <img class="rewards" src="./merch/LaptopCover.gif" />
+                  <!-- <img class="rewards" src="./merch/LaptopCover.gif" />
                   <img class="rewards" src="./merch/PassportCover.gif" />
-                  <img class="rewards" src="./merch/PCSet2.jpg" />
+                  <img class="rewards" src="./merch/PCSet2.jpg" /> -->
                 </div>
               </div>
             </div>
@@ -77,6 +78,7 @@
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <script src="./database.js"></script>
   <script src="./script.js"></script>
 
 </body>

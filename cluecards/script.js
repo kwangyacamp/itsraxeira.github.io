@@ -73,3 +73,5 @@ document.onkeydown = evt => {
 };
 
 window.onload = () => { openModal(); }
+
+console.log(GIFT_DATABASE["Choi Hyoo Min"]);

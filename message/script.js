@@ -1,5 +1,3 @@
-import REWARDS from "./database.js";
-
 var tl = new TimelineMax();
 
 var $container = $(".container"),
@@ -56,3 +54,63 @@ $container.click(function(){
   //       $('#picture').css('-webkit-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
   //   });
 });
+
+function addImg(key) {
+  if (dataset[key]) {
+    let entry = dataset[key];
+    
+    let h1Recipient = document.querySelector("h1#recipient");
+    h1Recipient.innerHTML = "To: " + entry.recipient;
+
+    let h2Recipient = document.querySelector("h2#card-recipient");
+    h2Recipient.innerHTML = "Dear " + entry.recipient;
+
+    let container = document.querySelector(".rewards-container");
+    
+    var injectHTML = "";
+    if (entry.HomeLivingSet) {
+      injectHTML += '<img class="rewards" src="./merch/HomeLivingSet.gif" />';
+    }
+    if (entry.ElectronicSet) {
+      injectHTML += '<img class="rewards" src="./merch/ElectronicSet.gif" />';
+    }
+    if (entry.AccessoriesSet) {
+      injectHTML += '<img class="rewards" src="./merch/AccessoriesSet.gif" />';
+    }
+    if (entry.StationarySet) {
+      injectHTML += '<img class="rewards" src="./merch/StationarySet.gif" />';
+    }
+    if (entry.PCSet1) {
+      injectHTML += '<img class="rewards" src="./merch/PCSet1.jpg" />';
+    }
+    if (entry.PCSet2) {
+      injectHTML += '<img class="rewards" src="./merch/PCSet2.jpg" />';
+    }
+    if (entry.Headphone) {
+      injectHTML += '<img class="rewards" src="./merch/Headphone.gif" />';
+    }
+    if (entry.PassportCover) {
+      injectHTML += '<img class="rewards" src="./merch/PassportCover.gif" />';
+    }
+    if (entry.LaptopCover) {
+      injectHTML += '<img class="rewards" src="./merch/LaptopCover.gif" />';
+    }
+    if (entry.NightstandLamp) {
+      injectHTML += '<img class="rewards" src="./merch/NightstandLamp.gif" />';
+    }
+    if (entry.ComfortCushion) {
+      injectHTML += '<img class="rewards" src="./merch/ComfortCushion.gif" />';
+    }
+    container.innerHTML = injectHTML;
+  } 
+}
+
+window.onload = () => {
+  let url = new URL(window.location.href);
+  let searchParams = new URLSearchParams(url.search);
+  let from = searchParams.get("from");
+  let to = searchParams.get("to");
+  var key = from + "|" + (to ? to : "");
+  console.log(key);
+  addImg(key);
+}
