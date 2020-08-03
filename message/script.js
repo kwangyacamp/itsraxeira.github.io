@@ -70,7 +70,7 @@ function addImg(key) {
     message.innerHTML = entry.message.replace(/\n/, "<br />");
 
     let regards = document.querySelector("#card-sender");
-    regards.innerHTML = "Regards,<br />" + entry.name;
+    regards.innerHTML = "Regards,<br />" + entry.name + ", " + entry.prodigy;
 
     let container = document.querySelector(".rewards-container");
     var injectHTML = "";
