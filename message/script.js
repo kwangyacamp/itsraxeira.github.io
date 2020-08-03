@@ -51,19 +51,20 @@ $container.click(function(){
   //       radius = Math.sqrt(Math.pow(tiltx,2) + Math.pow(tilty,2));
   //       degree = (radius * 20);
   //       TweenLite.set($envelope, {transform:'rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)'});
-  //       $('#picture').css('-webkit-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
+  //       // $('#picture').css('-webkit-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
   //   });
 });
 
 function addImg(key) {
   if (dataset[key]) {
     let entry = dataset[key];
+    let recipient = entry.recipient ? entry.recipient : "-";
     
     let h1Recipient = document.querySelector("h1#recipient");
-    h1Recipient.innerHTML = "To: " + entry.recipient;
+    h1Recipient.innerHTML = "To: " + recipient;
 
     let h2Recipient = document.querySelector("h2#card-recipient");
-    h2Recipient.innerHTML = "Dear " + entry.recipient;
+    h2Recipient.innerHTML = "Dear " + recipient;
 
     let message = document.querySelector("#card-message");
     message.innerHTML = entry.message.replace(/\n/, "<br />");
