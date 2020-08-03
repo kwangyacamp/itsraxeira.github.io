@@ -20,7 +20,7 @@ tl.set($container, {perspective:1100})
   .set($envelope, {transformStyle:"preserve-3d"})
   .set($envBack, {rotationY:-180})
   .set([$envBack, $envFront], {backfaceVisibility:"hidden"})
-  .set([$envBack, $envFront, $card], {scale: 0.6})
+  .set([$envBack, $envFront, $card], {scale: 0.9})
   .set($topFlap, {transformOrigin: "center top"})
   .set($card, {rotationY: -180, autoAlpha: 1})
   .set($outerBG, {backfaceVisibility:"hidden"})
@@ -65,8 +65,13 @@ function addImg(key) {
     let h2Recipient = document.querySelector("h2#card-recipient");
     h2Recipient.innerHTML = "Dear " + entry.recipient;
 
+    let message = document.querySelector("#card-message");
+    message.innerHTML = entry.message.replace(/\n/, "<br />");
+
+    let regards = document.querySelector("#card-sender");
+    regards.innerHTML = "Regards,<br />" + entry.name;
+
     let container = document.querySelector(".rewards-container");
-    
     var injectHTML = "";
     if (entry.HomeLivingSet) {
       injectHTML += '<img class="rewards" src="./merch/HomeLivingSet.gif" />';
