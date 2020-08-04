@@ -59,7 +59,7 @@ const jsonList = [
   {
     "name": "RYU Ziraa",
     "prodigy": "Vestenium",
-    "recipient": null,
+    "recipient": "All",
     "message": "💙💙💙💙💙💙💙💙💙",
     "HomeLivingSet": false,
     "ElectronicSet": true,
@@ -135,7 +135,7 @@ const jsonList = [
   {
     "name": "LEE Haidar",
     "prodigy": "Ostenium",
-    "recipient": null,
+    "recipient": "Prodigyzen",
     "message": "you've work hard, prodigyzen!",
     "HomeLivingSet": false,
     "ElectronicSet": false,
@@ -192,7 +192,7 @@ const jsonList = [
   {
     "name": "LEE Tessya",
     "prodigy": "Nordenium",
-    "recipient": null,
+    "recipient": "Staff Nordanus",
     "message": "Terima kasih atas kerja kerasnya... Maafin aku kalo aku menyusahkan kalian para danus, i lop yu pul",
     "HomeLivingSet": true,
     "ElectronicSet": true,
@@ -401,7 +401,7 @@ const jsonList = [
   {
     "name": "LEE Dira",
     "prodigy": "Nordenium",
-    "recipient": null,
+    "recipient": "Panitia",
     "message": "mau kasih buat panitia danusan yang udah ngeluangin waktunya buat nordanus ini, sama mau ngasih tau aja kalau you all did well. you all did amazing. you all did your best. mungkin kalian gatau aku karena aku jarang banget nongol di grup tapi aku selalu mantau kalian kok. Semoga acaranya lancar ya dan apa yang telah diperjuangkan dan yang diusahakan membuahkan hasil yang baik. SEMANGAT TIM NORDANUS, I NORDE U ALL💙💙💙",
     "HomeLivingSet": true,
     "ElectronicSet": true,
@@ -534,7 +534,7 @@ const jsonList = [
   {
     "name": "KIM Yura",
     "prodigy": "Vestenium",
-    "recipient": null,
+    "recipient": "The Kim",
     "message": "I want to give this to the Kim who's been cheering me on",
     "HomeLivingSet": false,
     "ElectronicSet": true,
@@ -553,7 +553,7 @@ const jsonList = [
   {
     "name": "Na Ally",
     "prodigy": "Vestenium",
-    "recipient": null,
+    "recipient": "All",
     "message": "Semuanya, tolong doakan almarhum cimit tenang disana ya 🙏🏻 semoga arwahnya ngga gentayangan.. terimakasih doanya ya 🙏🏻😭",
     "HomeLivingSet": true,
     "ElectronicSet": true,
@@ -667,7 +667,7 @@ const jsonList = [
   {
     "name": "KIM Araseli",
     "prodigy": "Vestenium",
-    "recipient": null,
+    "recipient": "All Vestenians",
     "message": "For all Vestenians, this is for you.",
     "HomeLivingSet": false,
     "ElectronicSet": true,
@@ -876,7 +876,7 @@ const jsonList = [
   {
     "name": "LEE Haidar",
     "prodigy": "Ostenium",
-    "recipient": null,
+    "recipient": "Lee Yeseul",
     "message": "semangat kembar kembar norde gue.",
     "HomeLivingSet": true,
     "ElectronicSet": true,
@@ -914,7 +914,7 @@ const jsonList = [
   {
     "name": "im Hyerin",
     "prodigy": "Sydenium",
-    "recipient": null,
+    "recipient": "Im Hyerin",
     "message": "To myself: be strong.",
     "HomeLivingSet": false,
     "ElectronicSet": true,
@@ -952,7 +952,7 @@ const jsonList = [
   {
     "name": "Jung Baera",
     "prodigy": "Sydenium",
-    "recipient": null,
+    "recipient": "Someone",
     "message": "To someone make me smile\nTerimakasih telah hadir, terlebih untuk anak syde, bersyukur banget aku bisa menjadi bagian dari kalian, untuk anak yang aku sebutkan tadi, jaga kesehatan, ingat kamu harus nunjukin pada semesta kalo kamu berharga, keep smile and never give up😊",
     "HomeLivingSet": false,
     "ElectronicSet": true,
@@ -971,7 +971,7 @@ const jsonList = [
   {
     "name": "PARK Aruna",
     "prodigy": "Nordenium",
-    "recipient": null,
+    "recipient": "All",
     "message": "Love you all guys",
     "HomeLivingSet": false,
     "ElectronicSet": false,
@@ -1047,7 +1047,7 @@ const jsonList = [
   {
     "name": "LEE ace",
     "prodigy": "Vestenium",
-    "recipient": null,
+    "recipient": "Lee Ace",
     "message": "hai diriku! nih liat aku beliin, udh ya! nanti yg baca ini ngakak☺️ salam rrrawrh😠",
     "HomeLivingSet": false,
     "ElectronicSet": false,
@@ -1085,7 +1085,7 @@ const jsonList = [
   {
     "name": "KIM Awlia",
     "prodigy": "Vestenium",
-    "recipient": null,
+    "recipient": "All",
     "message": "Enjoy! Hope you like it!",
     "HomeLivingSet": false,
     "ElectronicSet": false,
@@ -1161,7 +1161,7 @@ const jsonList = [
   {
     "name": "Zhang Ayla",
     "prodigy": "Ostenium",
-    "recipient": null,
+    "recipient": "Zhang Ayla",
     "message": "Cheer up! Have a good day ay",
     "HomeLivingSet": false,
     "ElectronicSet": true,
@@ -1258,6 +1258,25 @@ const jsonList = [
     "prodigy": "Nordenium",
     "recipient": "dorm\nNG-2579",
     "message": "~",
+    "HomeLivingSet": true,
+    "ElectronicSet": true,
+    "AccessoriesSet": true,
+    "StationarySet": true,
+    "PCSet1": true,
+    "PCSet2": true,
+    "Headphone": true,
+    "PassportCover": true,
+    "LaptopCover": true,
+    "NightstandLamp": true,
+    "ComfortCushion": true,
+    "TCWW1": true,
+    "TCWW2": false
+  }
+  {
+    "name": "Anonym",
+    "prodigy": "Nordenium",
+    "recipient": "Staff Nordanus",
+    "message": "Thank you for your hard work! Ingat, kalian semua semerbak yang masing-masing punya identitas aromanya sendiri-sendiri. Taman bunga indah karena beragam jenisnya, bukan karena jumlahnya saja ^^ Terus berkreasi ya!",
     "HomeLivingSet": true,
     "ElectronicSet": true,
     "AccessoriesSet": true,
