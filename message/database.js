@@ -1271,12 +1271,12 @@ const jsonList = [
     "ComfortCushion": true,
     "TCWW1": true,
     "TCWW2": false
-  }
+  },
   {
     "name": "Anonym",
     "prodigy": "Nordenium",
     "recipient": "Staff Nordanus",
-    "message": "Thank you for your hard work! Ingat, kalian semua semerbak yang masing-masing punya identitas aromanya sendiri-sendiri. Taman bunga indah karena beragam jenisnya, bukan karena jumlahnya saja ^^ Terus berkreasi ya!",
+    "message": "Thank you for your hard work! Terima kasih untuk waktu yang kalian curahkan untuk berkreasi dan belajar selama di Nordanus. Aku minta maaf jika masih ada kekurangan di sana-sini, maaf untuk kesalahan atau jika ada yang mengganggu di hati baik yang sengaja atau tidak, sadar atau pun tidak, dalam bentuk perkataan maupun perbuatan. Maaf juga tempo hari karena kabur dan tidak bisa memberi respon untuk pesan-pesan dari kalian (dan Nordenians lainnya). Aku anti-softhour garis keras, hehe. Terkesannya cold, ya? Tak apa, aku pun suka beranggapan demikian. Meskipun maksudnya bukan begitu--terkadang ketika dihadapkan dengan situasi seperti itu pikiranku langsung blank, tidak bisa merespon sama sekali. Semoga dimaklumi. Oh ya. Ingat, kalian semua semerbak. Kalian semua wangi. Masing-masing punya identitas aromanya sendiri-sendiri. Taman bunga indah karena beragam jenisnya, bukan karena jumlahnya saja ^^ Terus berkreasi ya!",
     "HomeLivingSet": true,
     "ElectronicSet": true,
     "AccessoriesSet": true,
