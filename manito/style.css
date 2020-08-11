@@ -13,6 +13,13 @@ h1 {
   font-size: 23px;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form {
   width: 300px;
   padding: 64px 15px 24px;
