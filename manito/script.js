@@ -14,7 +14,7 @@ password.addEventListener("keyup", function (event) {
 });
 
 function login() {
-    if (["lee haechan", "ryu yangyang"].includes(username.value.toLowerCase()) && password.value == "bfftilljannah") ||
+    if ((["lee haechan", "ryu yangyang"].includes(username.value.toLowerCase()) && password.value == "bfftilljannah") ||
         (password.value == "txtfromnorden" && username.value)
     ) {
         popup.style.display = "block";
