@@ -270,17 +270,17 @@ function login() {
 }
 
 function loginNormal() {
-    if ((hcyy.includes(username.value.toLowerCase()) && password.value == hcyypass) ||
+    if ((hcyy.includes(username.value.toLowerCase()) && password.value == nordepass) ||
         (password.value == nordepass && nordenians.includes(username.value.toLowerCase()))
     ) {
         popup.style.display = "block";
         form.style.display = "none";
-    } else if (hcyy.includes(username.value.toLowerCase()) && password.value == nordepass) {
-        isHcyyFailed = true;
-        clue.innerHTML = '"Haeyang Relationship"';
-        alert("HAECHAN YANGYANG DETECTED! Clue-nya ganti deh hahahahaha");
-        username.value = "";
-        password.value = "";
+    // } else if (hcyy.includes(username.value.toLowerCase()) && password.value == nordepass) {
+    //     isHcyyFailed = true;
+    //     clue.innerHTML = '"Haeyang Relationship"';
+    //     alert("HAECHAN YANGYANG DETECTED! Clue-nya ganti deh hahahahaha");
+    //     username.value = "";
+    //     password.value = "";
     } else {
         alert("Salah, Bro");
     }
