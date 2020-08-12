@@ -12,8 +12,6 @@ const nordenians = [
     "AdminBucinBom",
     "HRD N",
     "HRD X",
-    "LEE Haechan",
-    "RYU Yangyang",
     "BAE Aera",
     "BAE Arin",
     "BAE Ayla",
