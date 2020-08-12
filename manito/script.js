@@ -4,7 +4,8 @@ const form = document.querySelector("#form");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const clue = document.querySelector("#clue");
-const nordepass = "txtfromnorden";
+// const nordepass = "txtfromnorden";
+const nordepass = "kikoanggur";
 const hcyypass = "bfftilljannah";
 const hcyy = ["lee haechan", "ryu yangyang"];
 const nordenians = [
@@ -282,7 +283,7 @@ function loginNormal() {
     //     username.value = "";
     //     password.value = "";
     } else {
-        alert("Salah, Bro");
+        alert("Masa gatau, Nordenians bukan sih");
     }
 }
 
