@@ -1,5 +1,5 @@
 const button = document.querySelector("#login-button");
-const popup = document.querySelector("#vid-popup");
+const popup = document.querySelector("#image-popup");
 const form = document.querySelector("#form");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
@@ -283,7 +283,7 @@ function loginNormal() {
     //     username.value = "";
     //     password.value = "";
     } else {
-        alert("Masa gatau, Nordenians bukan sih");
+        alert("Masa gatau, Nordenians bukan sih 🤩🤪👀🤟🏻🤡");
     }
 }
 
