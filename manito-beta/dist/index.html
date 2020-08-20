@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Postcard</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Homemade+Apple" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=MedievalSharp" />
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="postcard" action="">
+  <div class="receiver absolute">
+    <label for="r-name" >To: </label>
+    <input type="text" name="receiver-name" placeholder="Jean-Luc Picard">
+  </div>
+  <div class="sender absolute">
+    <label for="s-name" >From: </label>
+    <input type="text" name="sender-name" placeholder="Geordi LaForge">
+  </div>
+  <div class="reply absolute">
+    <label for="t-reply" >Reply: </label>
+    <input type="text" name="reply-text" placeholder="Geordi@starfleet.com">
+  </div>
+  <div class="message absolute">
+    <label for="t-message" >Your message: </label>
+    <br>
+    <textarea name="message" rows="12" cols="50" placeholder="Hello! Write your message here in this fancy-schmancy Box!"></textarea>
+  </div>
+  <div class="send-btn absolute">
+    <button type="submit" name="button">Send your message >>></button>
+  </div>
+</form>
+<!-- partial -->
+  
+</body>
+</html>
