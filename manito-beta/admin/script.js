@@ -20,6 +20,12 @@ function prepareTable(dataset) {
     $('#table_id').DataTable({
         paging: false,
         data: dataset,
+        columns: [
+            { data: 'id' },
+            { data: 'from' },
+            { data: 'to' },
+            { data: 'message' }
+        ],
         columnDefs: [{
             targets: 0,
             render: function (data, type, row, meta) {
@@ -28,13 +34,7 @@ function prepareTable(dataset) {
                 }
                 return data;
             }
-        }],
-        columns: [
-            { data: 'id' },
-            { data: 'from' },
-            { data: 'to' },
-            { data: 'message' }
-        ]
+        }]
     });
 }
 
