@@ -19,8 +19,6 @@ const recipient = document.querySelector("#recipient");
 const message = document.querySelector("#message");
 const sendButton = document.querySelector("#send-button");
 
-var msg;
-
 window.onload = () => {
     let url = new URL(window.location.href);
     let searchParams = new URLSearchParams(url.search);
