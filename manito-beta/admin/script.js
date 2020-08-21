@@ -20,6 +20,15 @@ function prepareTable(dataset) {
     $('#table_id').DataTable({
         paging: false,
         data: dataset,
+        columnDefs: [{
+            targets: 0,
+            render: function (data, type, row, meta) {
+                if (type === 'display') {
+                    data = '<a href="' + data + '">' + data + '</a>';
+                }
+                return data;
+            }
+        }],
         columns: [
             { data: 'id' },
             { data: 'from' },
