@@ -1,4 +1,3 @@
-
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyC8JH_xK-n3RPChWBWyoGrzD7N3vmQ7YbU",
@@ -38,7 +37,7 @@ function prepareTable(dataset) {
     });
 }
 
-window.onload = () => {
+function loadDatabase() {
     db.collection("norde-manito").get()
         .then(function(querySnapshot) {
             // on success, create dataset list

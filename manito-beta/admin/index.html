@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="container" class="hidden">
     <table id="table_id" class="ui celled table">
       <thead>
         <tr>
@@ -37,6 +37,32 @@
       </tfoot>
     </table>
   </div>
+
+  <div id="auth" class="visible">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="" id="username">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="" id="password">
+          <label>Password</label>
+        </div>
+        <a href="#" id="login-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+  </div>
+
+  <script src="./login.js"></script>
+
 </body>
 
 </html>

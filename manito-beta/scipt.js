@@ -1,4 +1,4 @@
-// Your web app's Firebase configuration
+    // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyC8JH_xK-n3RPChWBWyoGrzD7N3vmQ7YbU",
     authDomain: "flameseeker-56fb5.firebaseapp.com",
@@ -23,21 +23,32 @@ const sendButton = document.querySelector("#send-button");
 var msg;
 
 function sendMessage() {
-    var jsonMessage = {
-        from: sender.value,
-        to: recipient.value,
-        message: message.value
-    };
-    msg = jsonMessage;
 
-    db.collection("norde-manito")
-        .add(jsonMessage)
-        .then((docRef) => {
-            console.log("Document written with ID: ", docRef.id);
-        })
-        .catch((error) => {
-            console.error("Error adding document: ", error);
-        })
+    if (sender.value && recipient.value && message.value) {
+        var jsonMessage = {
+            from: sender.value,
+            to: recipient.value,
+            message: message.value
+        };
+        msg = jsonMessage;
+    
+        db.collection("norde-manito")
+            .add(jsonMessage)
+            .then((docRef) => {
+                console.log("Document written with ID: ", docRef.id);
+                alert("Your message is successfully sent!");
+                sender.value = "";
+                recipient.value = "";
+                message.value = "";
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+                alert(error);
+            })
+    } else {
+        alert("Message cannot be empty!");
+    }
+    
 }
 
 sendButton.addEventListener("click", sendMessage);
