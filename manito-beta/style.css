@@ -15,7 +15,7 @@ body {
 
 input,
 textarea {
-  font-family: "La Belle Aurore";
+  font-family: "Niconne";
   background: transparent;
   border: none;
 }
@@ -34,7 +34,7 @@ input {
   height: 498px;
   margin: 0 auto;
   background: url('https://developer.mozilla.org/files/4151/background.jpg'); /*img from: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Styling_HTML_forms */
-  font-family: "La Belle Aurore";
+  font-family: "Niconne";
   border: 2px solid #ccc;
   box-shadow: 7px 7px 20px #555;
 }
@@ -62,10 +62,10 @@ input {
 .message textarea {
   margin-top: 10px;
   padding: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
   background: transparent;
-  letter-spacing: 2px;
-  line-height: 1.5em;
+  letter-spacing: 1px;
+  line-height: 1.3em;
   max-width: 300px;
 }
 
