@@ -5,12 +5,15 @@ const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const clue = document.querySelector("#clue");
 // const nordepass = "txtfromnorden";
-const nordepass = "kikoanggur";
-const hcyypass = "bfftilljannah";
-const hcyy = ["lee haechan", "ryu yangyang"];
+const nordepass = "sopawer";
+const hcyypass = "260820";
+// const hcyy = ["lee haechan", "ryu yangyang"];
+const hcyy = loginNormal;
 const nordenians = [
     "CHOI Hyo Min",
     "AdminBucinBom",
+    "LEE Haechan",
+    "RYU Yangyang",
     "HRD N",
     "HRD X",
     "BAE Aera",
@@ -243,7 +246,7 @@ const nordenians = [
     "ZHANG Yeeun"
 ].map(v => v.toLowerCase());
 
-var isHcyyFailed = false;
+var isLoginSuccess = false;
 
 
 button.onclick = login;
@@ -263,32 +266,35 @@ username.addEventListener("keyup", function (event) {
 });
 
 function login() {
-    if (!isHcyyFailed) {
+    if (!isLoginSuccess) {
         loginNormal();
     } else {
-        loginHcyy();
+        login2FA();
     }
 }
 
 function loginNormal() {
-    if ((hcyy.includes(username.value.toLowerCase()) && password.value == nordepass) ||
-        (password.value == nordepass && nordenians.includes(username.value.toLowerCase()))
+    if (password.value == nordepass && nordenians.includes(username.value.toLowerCase())
     ) {
-        popup.style.display = "block";
-        form.style.display = "none";
+    //     popup.style.display = "block";
+    //     form.style.display = "none";
     // } else if (hcyy.includes(username.value.toLowerCase()) && password.value == nordepass) {
-    //     isHcyyFailed = true;
-    //     clue.innerHTML = '"Haeyang Relationship"';
-    //     alert("HAECHAN YANGYANG DETECTED! Clue-nya ganti deh hahahahaha");
-    //     username.value = "";
-    //     password.value = "";
+        // isHcyyFailed = false;
+
+        isLoginSuccess = true;
+
+        clue.innerHTML = '"<div id="clue"><div>#01<br>🎶 <br>Reality will break your heart <br>Survival will not be the hardest part <br>It\'s keeping all your hopes alive <br><br>#02 <br>the perfection, the infinity; oxygen <br><br>#03 <br>vi·​cen·​ni·​al <br></div></div>"';
+        alert("Ooops, you still have one more! 🤩🤪👀🤟🏻🤡");
+
+        username.style.display = "none";
+        password.value = "";
     } else {
-        alert("Masa gatau, Nordenians bukan sih 🤩🤪👀🤟🏻🤡");
+        alert("Hmm, coba lagi ya?");
     }
 }
 
-function loginHcyy() {
-    if (hcyy.includes(username.value.toLowerCase()) && password.value == hcyypass) {
+function login2FA() {
+    if (password.value == hcyypass) {
         popup.style.display = "block";
         form.style.display = "none";
     } else {
