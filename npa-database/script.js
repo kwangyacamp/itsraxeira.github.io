@@ -4,6 +4,7 @@ const yourname = document.querySelector("#yourname");
 const prodigium = document.querySelector("#prodigium");
 const status = document.querySelector("#status");
 const registerbutton = document.querySelector("#register-button");
+const searchBar = document.querySelector("#search-bar");
 
 var user;
 
@@ -29,6 +30,8 @@ function register() {
                 yourname.value = "";
                 prodigium.value = "";
                 status.value = "";
+
+                location.reload();
             })
             .catch((error) => {
                 console.error("Error adding document: ", error);
@@ -41,10 +44,13 @@ function register() {
 
 registerbutton.addEventListener("click", register);
 
+var table;
+
 function prepareTable(dataset) {
-    $('#table_id').DataTable({
+    table = $('#table_id').DataTable({
         paging: false,
         data: dataset,
+        dom: '<"top"i>rt<"bottom"><"clear">',
         columns: [
             { data: 'faceClaim' },
             { data: 'clanName' },
@@ -53,10 +59,16 @@ function prepareTable(dataset) {
             { data: 'statusOfFaceClaim' }
         ]
     });
+
+
+    // setup search
+    searchBar.addEventListener("keyup", function(event) {
+        table.search(searchBar.value).draw();
+        console.log(searchBar.value);
+    });
 }
 
-
-var queryResult = []
+var queryResult = [];
 
 function loadDatabase() {
     db.collection("NPA-DB").get()
@@ -78,4 +90,24 @@ function loadDatabase() {
         });
 }
 
-// window.onload = loadDatabase;
+function refreshDataset() {
+    db.collection("NPA-DB").get()
+    .then(function(querySnapshot) {
+        // on success, create dataset list
+        querySnapshot.forEach(function(doc) {
+            let student = doc.data();
+            queryResult.push({
+                faceClaim: student.faceClaim,
+                clanName: student.clanName,
+                name: student.name,
+                prodigy: student.prodigy,
+                statusOfFaceClaim: student.statusOfFaceClaim,
+            });
+        });
+
+        // prepare data table
+        table.data(queryResult).draw(false);
+    });
+}
+
+window.onload = loadDatabase;
