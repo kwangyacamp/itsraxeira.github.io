@@ -40,3 +40,42 @@ function register() {
 }
 
 registerbutton.addEventListener("click", register);
+
+function prepareTable(dataset) {
+    $('#table_id').DataTable({
+        paging: false,
+        data: dataset,
+        columns: [
+            { data: 'faceClaim' },
+            { data: 'clanName' },
+            { data: 'name' },
+            { data: 'prodigy' },
+            { data: 'statusOfFaceClaim' }
+        ]
+    });
+}
+
+
+var queryResult = []
+
+function loadDatabase() {
+    db.collection("NPA-DB").get()
+        .then(function(querySnapshot) {
+            // on success, create dataset list
+            querySnapshot.forEach(function(doc) {
+                let student = doc.data();
+                queryResult.push({
+                    faceClaim: student.faceClaim,
+                    clanName: student.clanName,
+                    name: student.name,
+                    prodigy: student.prodigy,
+                    statusOfFaceClaim: student.statusOfFaceClaim,
+                });
+            });
+
+            // prepare data table
+            prepareTable(queryResult);
+        });
+}
+
+// window.onload = loadDatabase;
