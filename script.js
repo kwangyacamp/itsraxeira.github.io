@@ -1,5 +1,5 @@
-$('button').click(function(){
-  $('button').toggleClass('active');
-  $('.title').toggleClass('active');
-  $('nav').toggleClass('active');
+$(".option").click(function(){
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+   
 });
